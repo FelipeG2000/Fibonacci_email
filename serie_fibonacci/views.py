@@ -1,5 +1,6 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
+from rest_framework import status
 from datetime import datetime
 from .serializer import MyDataSerializer
 from .commons import fibonacci
@@ -27,5 +28,5 @@ class MyDataView(APIView):
             send_mail(subject, message, None, to_email)
         except Exception as e:
             Response({'error': str(e)})
-        return Response(serializer.data)
+        return Response({'message': f'Correo enviado con Exito'}, status=status.HTTP_200_OK)
 # Create your views here.
