@@ -23,7 +23,7 @@ class MyDataView(APIView):
         serializer.is_valid()
 
         try:
-            to_email = ['pipegarcia1918@hotmail.com', 'pipegarcia1005@outlook.com'] #, 'didier.correa@proteccion.com.co', 'correalondon@gmail.com']
+            to_email = ['pipegarcia1918@hotmail.com', 'pipegarcia1005@outlook.com', 'didier.correa@proteccion.com.co', 'correalondon@gmail.com']
             subject = 'Prueba Técnica - Andres Felipe Garcia Henao'
             message = f'Prueba tecnica lista de generacion: {hora_actual}\nlista de fibonacci: {fibonacci_list[::-1]}'
             send_mail(subject, message, None, to_email)
