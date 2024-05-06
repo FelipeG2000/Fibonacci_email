@@ -159,4 +159,4 @@ EMAIL_HOST = 'smtp.office365.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = DEFAULT_FROM_EMAIL
-EMAIL_HOST_PASSWORD = 'uyimycwshxjmbpzr.'
+EMAIL_HOST_PASSWORD = 'avxzfeqgjrfasqcv.'
