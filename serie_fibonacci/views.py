@@ -7,7 +7,7 @@ from .commons import fibonacci
 from django.core.mail import send_mail
 from django.template.loader import render_to_string
 
-
+#adding a coment
 class MyDataView(APIView):
 
     def get(self, request):
