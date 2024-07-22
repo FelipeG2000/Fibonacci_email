@@ -24,8 +24,8 @@ class MyDataView(APIView):
 
         try:
             to_email = ['pipegarcia1918@hotmail.com', 'pipegarcia1005@outlook.com']
-            subject = 'Prueba Técnica - Andres Felipe Garcia Henao'
-            message = f'Prueba tecnica lista de generacion: {hora_actual}\nlista de fibonacci: {fibonacci_list[::-1]}'
+            subject = 'Enviado por - Andres Felipe Garcia Henao'
+            message = f'Serie de fibonacci: {hora_actual}\nlista de fibonacci: {fibonacci_list[::-1]}'
             send_mail(subject, message, None, to_email)
         except Exception as e:
             Response({'error': str(e)})
