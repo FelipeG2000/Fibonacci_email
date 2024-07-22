@@ -29,5 +29,5 @@ class MyDataView(APIView):
             send_mail(subject, message, None, to_email)
         except Exception as e:
             Response({'error': str(e)})
-        return Response({'message': f'Correo enviado con Exito'}, status=status.HTTP_200_OK)
+        return Response({'message': f'Correo enviado'}, status=status.HTTP_200_OK)
 # Create your views here.
